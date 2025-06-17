@@ -26,6 +26,10 @@ const customers: Customer[] = [
     name: 'Stone Elegance',
     logo: '/customers/logo-removebg-preview.webp',
     website: 'https://stoneelegance.t3xlk.com/'
+  },
+  {
+    name: 'Ceilao Insurance',
+    logo: '/CIB-Logo.png'
   }
 ];
 
@@ -60,7 +64,7 @@ const Customers = () => {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
-              transition={{ duration: 0.5 }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
             >
               <div className="w-40 h-24 md:w-48 md:h-28 relative flex items-center justify-center">
                 <Image
